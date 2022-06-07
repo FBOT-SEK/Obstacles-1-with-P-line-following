@@ -59,7 +59,7 @@ def segue_parede():
         tank_drive.on(20, 20)
         if color.color == 1:
             dist_cm(7.6)
-            rotate()
+            rotate(-90)
             break
         
     else:

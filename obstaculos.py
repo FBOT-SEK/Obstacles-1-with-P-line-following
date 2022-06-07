@@ -53,7 +53,7 @@ def dist_cm(cm):
     tank_drive.on_for_degrees(20, 20, andar)
     
 def segue_parede():
-    while US2.distance_centimeters <= 15:
+    while US2.distance_centimeters <= 13:
         print(US2.distance_centimeters)
         time.sleep(0.1)
         tank_drive.on(20, 20)
@@ -74,5 +74,6 @@ while True: #while main
     seguidor()
     time.sleep(0.1)
     rotate(-90)
-    
     segue_parede()
+    
+    
